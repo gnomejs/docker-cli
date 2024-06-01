@@ -1,5 +1,5 @@
 import { whichSync } from "@gnome/exec";
-import { docker } from "./docker.ts";
+import { docker } from "./cli.ts";
 import { assert as ok, assertEquals as equals } from "jsr:@std/assert@^0.224.0";
 
 const hasDocker = whichSync("docker") !== undefined;

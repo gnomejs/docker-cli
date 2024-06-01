@@ -1,5 +1,5 @@
 import type { CommandOptions } from "@gnome/exec";
-import { type ComposeGlobalArgs, DockerComposeCommand } from "./compose.ts";
+import { type ComposeGlobalArgs, DockerComposeCommand } from "./cli.ts";
 
 /**
  * Represents the arguments for the "up" command in the Docker Compose CLI.

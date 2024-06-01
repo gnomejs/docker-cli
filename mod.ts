@@ -16,4 +16,4 @@
  * ```
  * @module
  */
-export * from "./docker.ts";
+export * from "./cli.ts";

@@ -28,6 +28,13 @@ export interface ComposeGlobalArgs extends SplatObject {
     help?: boolean;
 }
 
+/**
+ * Converts the given `SplatObject` into an array of command-line arguments
+ * for the `compose` command.
+ *
+ * @param args - The `SplatObject` containing the arguments.
+ * @returns An array of command-line arguments.
+ */
 export function splatCompose(args: SplatObject): string[] {
     args.splat ??= {};
     args.splat.prefix = "--";

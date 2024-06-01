@@ -1,5 +1,5 @@
 import { up, type UpArgs } from "./up.ts";
-import { splatCompose } from "./compose.ts";
+import { splatCompose } from "./cli.ts";
 import { assert as ok, assertEquals as equals } from "jsr:@std/assert@^0.224.0";
 import { whichSync } from "@gnome/exec";
 

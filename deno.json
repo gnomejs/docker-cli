@@ -1,11 +1,11 @@
 {
     "name": "@gnome/docker-cli",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "exports": {
         ".": "./mod.ts",
-        "./docker": "./docker.ts",
+        "./cli": "./cli.ts",
         "./compose": "./mod.ts",
-        "./compose/compose": "./compose/compose.ts",
+        "./compose/cli": "./compose/cli.ts",
         "./compose/up": "./compose/up.ts",
         "./compose/down": "./compose/down.ts"
     },
@@ -29,8 +29,8 @@
     "publish": {
         "include": [
             "mod.ts",
-            "docker.ts",
-            "compose/compose.ts",
+            "cli.ts",
+            "compose/cli.ts",
             "compose/mod.ts",
             "compose/up.ts",
             "compose/down.ts",
@@ -39,5 +39,5 @@
             "deno.json"
         ]
     },
-    "imports": { "@gnome/exec": "jsr:@gnome/exec@^0.4.2" }
+    "imports": { "@gnome/exec": "jsr:@gnome/exec@^0.4.4" }
 }
